@@ -1,0 +1,12 @@
+#mapid {
+    height: 100% !important;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+html,
+body {
+    height: 100%;
+}
