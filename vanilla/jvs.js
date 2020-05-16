@@ -19,7 +19,7 @@ function INITIALFUNTION() {
     //mymap.flyTo(JSON.parse('{"lat":-22.902091142562867,"lng":-43.13004970550537}'));
 
 
-    montaUFFs();
+    //montaUFFs();
 }
 
 function montaUFFs() {
@@ -59,7 +59,7 @@ function onRegionClick(e) {
 
 function onMapClick(e) {
     if (!e.originalEvent.defaultPrevented) {
-
+        console.log(e.latlng);
         points[i_points] = e.latlng;
         layers_mark[i_points] = L.marker(points[i_points]).addTo(mymap);
         layers_mark[i_points].on('click', click_mark, ['a']);
